@@ -1,0 +1,45 @@
+section {
+  border-style: solid;
+  overflow: auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 300%;
+}
+
+@media screen and (min-width: 1000px) {
+  summary {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+  }
+}
+
+.col {
+  float: left;
+}
+.box {
+  background-color: black;
+  width: 20vw;
+  height: 100px;
+  margin: 10px;
+}
+
+.box.higth1 {
+  height: 100px;
+}
+
+.box.higth2 {
+  height: 150px;
+}
+
+.box.higth3 {
+  height: 200px;
+}
+
+.box.higth4 {
+  height: 250px;
+}
