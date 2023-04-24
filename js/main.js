@@ -1,6 +1,6 @@
-
 $(document).ready(function () {
-  $("#actions").tabs();
+  $("#actions-div").width(200);   
+  $("#actions").tabs();    
   console.log("riadh");
   $("#dialog0").dialog();
   $("#dialog1").dialog();
