@@ -1,6 +1,8 @@
 $(document).ready(function () {
   $("#actions").tabs();
-  $("#actions").width(200);   
+  $("#actions").draggable();
+  $("#actions").resizable();
+  $("#actions").width(200);
   console.log("riadh");
   $("#dialog0").dialog();
   $("#dialog1").dialog();
