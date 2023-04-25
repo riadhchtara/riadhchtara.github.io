@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  
+  $('#jstree_demo_div').jstree(); 
   $("#actions").tabs();
   $("#actions").draggable();
   $("#actions").resizable();
@@ -10,4 +12,4 @@ $(document).ready(function () {
   $("button, input, a").on("click", function (event) {
     event.preventDefault();
   });
-}); 
+});  
