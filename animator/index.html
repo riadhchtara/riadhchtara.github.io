@@ -35,14 +35,12 @@
   <input class="ui-button ui-widget ui-corner-all" type="submit" value="A submit button">
 
   <a class="ui-button ui-widget ui-corner-all" href="#">An anchor</a>
-  <div id="actions-div">
-    <div id="actions">
-      <ul>
-        <li><a href="#actions-1">Actions</a></li>
-      </ul>
-      <div id="actions-1">
-        <p></p>
-      </div>
+  <div id="actions">
+    <ul>
+      <li><a href="#actions-1">Actions</a></li>
+    </ul>
+    <div id="actions-1">
+      <p></p>
     </div>
   </div>
   <div id="jstree">
@@ -55,6 +53,8 @@
         </ul>
       </li>
       <li>Root node 2</li>
+      <li data-jstree='{"icon":"glyphicon glyphicon-leaf"}'>
+        Child</li>
     </ul>
   </div>
   <button>demo button</button>
