@@ -4,6 +4,8 @@ $(document).ready(function () {
     console.log(data.selected);
   });
 
+  $("#menu").menu();
+
   $('button').on('click', function () {
     $('#jstree').jstree(true).select_node('child_node_1');
     $('#jstree').jstree('select_node', 'child_node_1');
