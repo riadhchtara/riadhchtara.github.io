@@ -22,6 +22,4 @@ $(document).ready(function () {
   $("button, input, a").on("click", function (event) {
     event.preventDefault();
   });
-});  
-
-
+})
