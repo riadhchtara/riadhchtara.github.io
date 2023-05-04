@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#jstree').on("changed.jstree", function (e, data) {
 
     $("#dialog0").dialog();
-    $("#dialog0").show(); up
+    $("#dialog0").show();
 
     console.log(data.selected);
   });
@@ -26,7 +26,7 @@ $(document).ready(function () {
   $(".widget input[type=submit], .widget a, .widget button").button();
   $("button, input, a").on("click", function (event) {
     $("button, input, a").on("click", function (event) {
-      z
+
       event.preventDefault();
     });
   })
