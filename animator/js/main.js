@@ -2,15 +2,32 @@ $(document).ready(function () {
   $('#jstree').jstree();
   $('#jstree').on("changed.jstree", function (e, data) {
 
-    $("#dialog0").dialog();
-    $("#dialog0").show();
+
 
     console.log(data.selected);
   });
 
+
+  var dialog = $("#dialog0").dialog({
+    autoOpen: false,
+    height: 400,
+    width: 350,
+    modal: true,
+    buttons: {
+      "Create an account": addUser,
+      Cancel: function () {
+        dialog.dialog("close");
+      }
+    },
+    close: function () {
+      form[0].reset();
+      allFields.removeClass("ui-state-error");
+    }
+  });
   $('#show').on('click', function () {
-    $("#dialog0").dialog();
-    $("#dialog0").show();
+
+    dialog.dialog("open");
+
   });
 
   $("#menu").menu();
@@ -25,12 +42,12 @@ $(document).ready(function () {
   $("#actions").resizable();
   $("#actions").width(200);
   console.log("riadh");
-  $("#dialog0").hide();
+
 
 
 
   $(".widget input[type=submit], .widget a, .widget button").button();
   $("button, input, a").on("click", function (event) {
-    event.preventDefault();
+    vent.preventDefault();
   });
 })
