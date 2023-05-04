@@ -8,6 +8,11 @@ $(document).ready(function () {
     console.log(data.selected);
   });
 
+  $('#show').on('click', function () {
+    $("#dialog0").dialog();
+    $("#dialog0").show();
+  });
+
   $("#menu").menu();
 
   $('button').on('click', function () {
