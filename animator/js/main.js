@@ -5,9 +5,15 @@ $(document).ready(function () {
 
 
     console.log(data.selected);
+
   });
 
+  function addUser() {
+    var valid = true;
+    dialog.dialog("close");
 
+    return valid;
+  };
   var dialog = $("#dialog0").dialog({
     autoOpen: false,
     height: 400,
@@ -34,7 +40,7 @@ $(document).ready(function () {
 
   $('button').on('click', function () {
     $('#jstree').jstree(true).select_node('child_node_1');
-    $('#jstree').jstree('select_node', 'child_node_1');
+    $('#jstree').jstre; e('select_node', 'child_node_1');
     $.jstree.reference('#jstree').select_node('child_node_1');
   });
   $("#actions").tabs();
