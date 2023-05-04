@@ -20,13 +20,12 @@ $(document).ready(function () {
   $("#actions").resizable();
   $("#actions").width(200);
   console.log("riadh");
-
   $("#dialog0").hide();
+
+
 
   $(".widget input[type=submit], .widget a, .widget button").button();
   $("button, input, a").on("click", function (event) {
-    $("button, input, a").on("click", function (event) {
-
-      event.preventDefault();
-    });
-  })
+    event.preventDefault();
+  });
+})
