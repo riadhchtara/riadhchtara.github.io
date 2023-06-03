@@ -8,28 +8,6 @@ $(document).ready(function () {
     });
 
 
-    var dialog = $("#dialog0").dialog({
-        autoOpen: false,
-        height: 400,
-        width: 350,
-        modal: true,
-        buttons: {
-            "Create an account": addUser,
-            Cancel: function () {
-                dialog.dialog("close");
-            }
-        },
-        close: function () {
-            form[0].reset();
-            allFields.removeClass("ui-state-error");
-        }
-    });
-    $('#show').on('click', function () {
-
-        dialog.dialog("open");
-
-    });
-
     $("#menu").menu();
 
     $('button').on('click', function () {
